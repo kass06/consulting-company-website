@@ -1,0 +1,98 @@
+/* Glow effect for social media icons */
+.glow-on-hover {
+    animation: glowing 1.5s infinite alternate;
+    color: #4CAF50 !important;
+}
+
+
+@keyframes glowing {
+    
+    0% {
+        text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 20px #4CAF50;
+    }
+    50% {
+        text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+    }
+    100% {
+        text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
+        
+    }
+}
+
+/* Home Section Background Image with Overlay */
+#home {
+    position: relative;
+    background: url('images/Sorab\ background\ img.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Text inside Home Section */
+#home .container {
+    z-index: 2;
+}
+
+/* Button Glow Effect */
+.glow-on-hover {
+    animation: glowing 1.5s infinite alternate;
+    color: #4CAF50 !important;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 20px #4CAF50;
+    }
+    50% {
+        text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+    }
+    100% {
+        text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
+    }
+}
+
+
+/* Card and Picture Effects */
+.picture-effect {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.picture-effect:hover {
+    transform: scale(1.1);
+}
+
+.testimonial-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Tailwind CSS for Buttons and Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        padding: 10px;
+    }
+
+    .testimonial-card {
+        margin-bottom: 20px;
+    }
+}
