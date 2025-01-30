@@ -4,9 +4,7 @@
     color: #4CAF50 !important;
 }
 
-
 @keyframes glowing {
-    
     0% {
         text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 20px #4CAF50;
     }
@@ -15,7 +13,6 @@
     }
     100% {
         text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
-        
     }
 }
 
@@ -62,7 +59,6 @@
         text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
     }
 }
-
 
 /* Card and Picture Effects */
 .picture-effect {
